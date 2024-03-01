@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+}
+
+.overpass-font {
+  font-family: "Overpass", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+	background-color: rgba(210, 217, 208, 0.3);
+}
+
+.container {
+	background-color: white;
+	width: 50%;
+	margin: 30px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    text-align: center;
+
+    box-sizing: border-box;
+	padding: 20px;
+	height: 70px;
+
+}
+
+.container-title {
+	font-size: 23px;
+    color: #04b819;
+    font-family: "Overpass";
+    margin-bottom: 20px;
+}
+
+.container-input {
+	Border: none;
+	border-bottom: 1px solid black;
+	outline: none;
+	background: none;
+	color: black;
+	text-align: center;
+	font-size: 14px;
+}
+
+.header-container {}
+
+.expenses-container {
+	height: 400px;
+}
+
+.categories {}
+
+.new-category {
+	width: 90%;
+	margin: 0px auto;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+	padding: 10px;
+	border-radius: 5px;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+.category-name, .category-value {
+	margin-left: 30px;
+}
+
+.container-info {
+	display: inline;
+	margin-left: 100px;
+	color: red;
+}
+
+.add-new {
+	width: 10%;
+	border-radius: 100px;
+	background-color: rgba(240, 240, 240, 1);
+	margin: 0 auto;
+	color: #04b819;
+	font-size: 25px;
+	border: none;
+	outline: none;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

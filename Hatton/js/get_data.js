@@ -20,9 +20,14 @@ $(document).ready(function(){
 		add_new_category();
 	});
 
-	$('.container-input').on('input', function() {
+	$(".categories").delegate(".container-input", "input", function(){
+		console.log("измене");
     	var updated = $(this).parent();
-    	updSpengind(updated.attr('spend_id'), updated.find(".category-name").val(), updated.find(".category-value"));
+    	updSpengind(updated.attr('spend_id'), updated.find(".category-name").val(), updated.find(".category-value").val());
+	});
+
+	$(".categories").delegate(".closer", "click", function(){
+		$(this).parent().remove();
 	});
 
 });

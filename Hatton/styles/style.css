@@ -53,6 +53,7 @@ body {
 .categories {}
 
 .new-category {
+	position: relative;
 	width: 90%;
 	margin: 0px auto;
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
@@ -85,7 +86,8 @@ body {
 }
 
 .closer {
-	margin: 0 auto;
+	position: absolute;
+	right: 20px;
 }
 
 

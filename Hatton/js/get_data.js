@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 	$('.container-input').on('input', function() {
     	var updated = $(this).parent();
-    	updSpengind(updated.attr('spend_id'), updated.find(".category-name").val(), updated.find(".category-value"));
+    	updSpengind(updated.attr('spend_id'), updated.find(".category-name").val(), 1*updated.find(".category-value").val());
 	});
 
 });

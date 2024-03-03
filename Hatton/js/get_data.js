@@ -19,6 +19,9 @@ $(document).ready(function(){
 	$(".add-new").click(function(){
 		add_new_category();
 	});
+	$(".draw-graph").click(function(){
+		drawSpendings('canvasForSpending');
+	});
 
 	$(".categories").delegate(".container-input", "input", function(){
 		console.log("измене");

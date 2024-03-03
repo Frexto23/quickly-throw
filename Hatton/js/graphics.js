@@ -2,7 +2,7 @@
 var setOfSpendings = {};
 var cnt = 0;
 
-function addSpending(nameSpending, costSpending) {
+function addSpending(nameSpending='', costSpending='') {
   cnt++;
   setOfSpendings[cnt] = {name:nameSpending, cost:costSpending};
   return cnt;
@@ -10,6 +10,10 @@ function addSpending(nameSpending, costSpending) {
 
 function delSpending(id) {
   delete setOfSpendings[id];
+}
+
+function updSpengind(id, new_name, new_cost) {
+  setOfSpendings[id] = {name:new_name, cost:new_cost};
 }
 
 function drawSpendings(canvId) {

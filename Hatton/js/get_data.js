@@ -3,6 +3,7 @@ function add_new_category() {
 	var new_category = $('<div class="new-category" id="-1">' +
 						'<input type="text" class="container-input category-name" placeholder="категория">' +
 						'<input type="text" class="container-input category-value" placeholder="руб">' +
+						'<button class="closer">' + 'x' + '</button>' +
 					'</div>)');
 
 	$(new_category).clone().appendTo(".categories");
@@ -20,7 +21,7 @@ $(document).ready(function(){
 	});
 
 	$('.container-input').on('input', function() {
-    	var updated = $(this).parent;
+    	var updated = $(this).parent();
     	updSpengind(updated.attr('spend_id'), updated.find(".category-name").val(), updated.find(".category-value"));
 	});
 

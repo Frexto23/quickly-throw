@@ -46,7 +46,8 @@ body {
 .header-container {}
 
 .expenses-container {
-	height: 400px;
+	min-height: 200px;
+	height: auto;
 }
 
 .categories {}

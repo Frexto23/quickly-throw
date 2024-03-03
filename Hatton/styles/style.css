@@ -17,11 +17,10 @@ body {
 	background-color: white;
 	width: 50%;
 	margin: 30px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    border-radius: 20px;
-    text-align: center;
-
-    box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  text-align: center;
+  box-sizing: border-box;
 	padding: 20px;
 	height: 70px;
 
@@ -29,9 +28,9 @@ body {
 
 .container-title {
 	font-size: 23px;
-    color: #04b819;
-    font-family: "Overpass";
-    margin-bottom: 20px;
+ 	color: #04b819;
+ 	font-family: "Overpass";
+  margin-bottom: 20px;
 }
 
 .container-input {
@@ -59,7 +58,7 @@ body {
 	padding: 10px;
 	border-radius: 5px;
 	text-align: left;
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 
 .category-name, .category-value {

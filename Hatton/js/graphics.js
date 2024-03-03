@@ -14,7 +14,7 @@ function delSpending(id) {
 
 function updSpengind(id, new_name, new_cost) {
   setOfSpendings[id] = {name:new_name, cost:new_cost};
-  console.log(new_name+':'+new_cost);
+  //console.log(new_name+':'+new_cost);
 }
 
 function drawSpendings(canvId) {

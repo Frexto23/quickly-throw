@@ -17,7 +17,10 @@ function updSpengind(id, new_name, new_cost) {
   //console.log(new_name+':'+new_cost);
 }
 
+var canvasAndChart = {};
+
 function drawSpendings(canvId) {
+  if(canvId in canvasAndChart) canvasAndChart[canvId].destroy();
   let ctx = document.getElementById(canvId);
   let arrLabels=[], arrData=[];
 
@@ -25,25 +28,26 @@ function drawSpendings(canvId) {
     var z = setOfSpendings[i];
     arrLabels.push(z.name),arrData.push(z.cost);
   }
-  
-
-   new Chart(ctx, {
-   type: 'polarArea',
-   data: {
-     labels: arrLabels,
-     datasets: [{
-       data: arrData,
-       borderWidth: 1
-     }]
-   },
-   options: {
-     scales: {
-       y: {
-         beginAtZero: true
-       }
-     }
-   }
-  });
+  console.log('make chart');
+  console.log(arrLabels);   
+  console.log(arrData); 
+  canvasAndChart[canvId] = new Chart(ctx, {
+  type: 'polarArea',
+  data: {
+    labels: arrLabels,
+    datasets: [{
+      data: arrData,
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+ });
 }
 
 
